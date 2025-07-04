@@ -6,7 +6,6 @@
     android:background="#cfff"
     android:gravity="center">
 
-
     <me.zhanghai.android.materialprogressbar.MaterialProgressBar
         android:indeterminate="true"
         style="@style/Widget.MaterialProgressBar.ProgressBar"

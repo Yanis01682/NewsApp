@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.SwipeRefreshLayout
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/swipe_refresh"
@@ -12,20 +12,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:drawSelectorOnTop="false"
-        android:id="@+id/timeline_list"
-        android:background="#EEEEEE"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/timeline_list"
+            android:background="#EEEEEE"/>
 
-    <include
-        android:id="@+id/timeline_footer"
-        layout="@layout/list_footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom" />
+        <include
+            android:id="@+id/timeline_footer"
+            layout="@layout/list_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
 
     </FrameLayout>
 
-</android.support.v4.widget.SwipeRefreshLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

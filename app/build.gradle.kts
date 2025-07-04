@@ -60,24 +60,29 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     // Retrofit 用于网络请求
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
 // Gson 转换器，用于将JSON数据转换为Kotlin/Java对象
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+//
+    implementation("com.sothree.slidinguppanel:library:3.4.0")
 // Glide 用于加载和显示图片
-    implementation("com.github.bumptech.glide:glide:4.12.0")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
 // SwipeRefreshLayout 用于下拉刷新
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
 // ViewModel 和 LiveData (推荐的架构组件)
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
-
-    // ... 你已有的其他依赖，比如 retrofit, glide, etc.
-    implementation("androidx.appcompat:appcompat:1.6.1") // 确保有这个AppCompat库
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.1")
 
     // 在这里添加下面这一行！
     implementation("com.google.android.material:material:1.12.0")
+    implementation("com.github.ivbaranov:materialfavoritebutton:0.1.5")
+
+
+
+    // 用于 MaterialProgressBar
+    implementation("me.zhanghai.android.materialprogressbar:library:1.6.1")
+
 }
